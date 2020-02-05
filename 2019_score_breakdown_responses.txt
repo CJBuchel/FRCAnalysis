@@ -1,0 +1,63 @@
+2019 SCORE BREAKDOWN RESPONSE DETAILS
+
+Notes regarding 2019 data:
+If a robot is listed as None in preMatchLevelRobotX, they were not on the field and therefore will not have habLineRobotX or endgameRobotX values
+Rocket scoring is from the perspective of standing on the field, inside the guardrail, looking at the rocket face
+Cargoship (bay) scoring is done with numbering of 1 to 8. Bay 1 is the closest to the center on the scoring table (near) side of the field, and continues out toward the alliance wall, toward the far side, then back toward the center of the field
+
+MatchScore: matchLevel - type of match
+MatchScore: matchNumber - match number within the tournament level
+MatchScore: alliances - array of alliances, each with their year (game) specific response in the follow
+
+alliance - the alliance name
+preMatchLevelRobot1 - Starting location for robot 1 (station 1) (Unknown, None, HabLevel1, HabLevel2)
+habLineRobot1 - Sandstorm/Teleop action of robot 1 (Unknown, None, CrossedHabLineInTeleop, CrossedHabLineInSandstorm)
+endgameRobot1 - HAB Climb result for robot 1 (Unknown, None, HabLevel1, HabLevel2, HabLevel3)
+preMatchLevelRobot2 - Starting location for robot 2 (station 2)
+habLineRobot2 - Sandstorm/Teleop action of robot 2
+endgameRobot2 - HAB Climb result for robot 2
+preMatchLevelRobot3 - Starting location for robot 3 (station 3)
+habLineRobot3 - Sandstorm/Teleop action of robot 3
+endgameRobot3 - HAB Climb result for robot 3
+topLeftRocketNear - Contents of specified bay (Unknown, None, Panel, PanelAndCargo)
+topRightRocketNear - Contents of specified bay
+midLeftRocketNear - Contents of specified bay
+midRightRocketNear - Contents of specified bay
+lowLeftRocketNear - Contents of specified bay
+lowRightRocketNear - Contents of specified bay
+completedRocketNear - Boolean specifying whether the Rocket was completed (not affected by G5/G16)
+topLeftRocketFar - Contents of specified bay (Unknown, None, Panel, PanelAndCargo)
+topRightRocketFar - Contents of specified bay
+midLeftRocketFar - Contents of specified bay
+midRightRocketFar - Contents of specified bay
+lowLeftRocketFar - Contents of specified bay
+lowRightRocketFar - Contents of specified bay
+completedRocketFar - Boolean specifying whether the Rocket was completed (not affected by G5/G16)
+preMatchBay1 - Contents of specified bay prior to the start of Sandstorm (Unknown, Panel,Cargo)
+preMatchBay2 - Contents of specified bay prior to the start of Sandstorm
+preMatchBay3 - Contents of specified bay prior to the start of Sandstorm
+preMatchBay6 - Contents of specified bay prior to the start of Sandstorm
+preMatchBay7 - Contents of specified bay prior to the start of Sandstorm
+preMatchBay8 - Contents of specified bay prior to the start of Sandstorm
+bay1 - Contents of specified bay (Unknown, None, Panel, PanelAndCargo)
+bay2 - Contents of specified bay
+bay3 - Contents of specified bay
+bay4 - Contents of specified bay
+bay5 - Contents of specified bay
+bay6 - Contents of specified bay
+bay7 - Contents of specified bay
+bay8 - Contents of specified bay
+sandStormBonusPoints - Number of points earned for Sandstorm Bonus
+autoPoints - Number of points earned in Auto (Sandstorm) period
+hatchPanelPoints - Number of points earned for Hatch Panels
+cargoPoints - Number of points earned for Cargo
+habClimbPoints - Number of points earned for Endgame/HAB Climbing
+teleopPoints - Total number of points earned during Teleop
+completeRocketRankingPoint - Whether or not the Complete Rocket Ranking Point was achieved (via Panel/Cargo or via opponent G5/G16)
+habDockingRankingPoint - Whether or not the HAB Docking Ranking Point was achieved
+foulCount - Quantity of fouls assigned to the alliance
+techFoulCount - Quantity of tech fouls assigned to the alliance
+adjustPoints - Manual adjustment points entered
+foulPoints - Quantity of points earned in Fouls/Tech Fouls committed by the opposite alliance
+rp - Total ranking points earned by the alliance in the Match (0 in Playoffs/Practice)
+totalPoints - Total points earned by the alliance i

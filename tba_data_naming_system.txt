@@ -1,0 +1,33 @@
+each event has event key
+    2018 South Pacific Regional = 2018ausp
+    2018 Southern Cross Regional = 2018ausc
+
+event code is without the year:
+    South Pacific = ausp
+    Southern Cross = ausc
+
+each team has a key indicated in the form 'frc1234'
+
+event type
+regional = 0
+district = 1
+district_cmp = 2
+cmp_division = 3
+cmp_finals = 4
+offseason = 99
+preseason = 100
+unlabelled = -1
+
+
+event/{event_key}/teams/simple
+event/{event_key}/matches/simple
+
+team/{teamkey}/events/{year}/simple
+
+team/{teamkey}/event/{event_key}/awards
+    award_type:
+        0 = chairmans
+        1 = winner
+        9 = Engineering inspiration
+        10 = rookie all-star
+

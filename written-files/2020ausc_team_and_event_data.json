@@ -1,0 +1,742 @@
+{
+  "3132": {
+    "nickname": "Thunder Down Under",
+    "name": "Macquarie University/BAE Systems/Google/Rockwell Automation/Ford/Boeing/Salesforce/AndyMark/Aarnet/United Airlines/Optus/Blackbird Ventures/Newscorp Ltd/National Instruments/Hilti/Smile Like Drake Foundation/CSIRO/Anritsu/T-Shirt Printing Australia/CSC/Ullrich Aluminium/Silverwater Crate&Greater Sydney Area High Schools&Global Student Network",
+    "country": "Australia",
+    "events_attended": {
+      "ausc": {
+        "name": "Southern Cross Regional",
+        "code": "ausc",
+        "location": "Sydney Olympic Park, NSW, Australia",
+        "start_date": "2020-03-14",
+        "end_date": "2020-03-17",
+        "event_type": 0
+      },
+      "ausp": {
+        "name": "South Pacific Regional",
+        "code": "ausp",
+        "location": "Sydney Olympic Park, NSW, Australia",
+        "start_date": "2020-03-20",
+        "end_date": "2020-03-22",
+        "event_type": 0
+      },
+      "casj": {
+        "name": "Silicon Valley Regional",
+        "code": "casj",
+        "location": "San Jose, CA, USA",
+        "start_date": "2020-04-01",
+        "end_date": "2020-04-04",
+        "event_type": 0
+      },
+      "cmptx": {
+        "name": "FIRST Championship (Houston)",
+        "code": "cmptx",
+        "location": "Houston, TX, USA",
+        "start_date": "2020-04-15",
+        "end_date": "2020-04-18",
+        "event_type": 4
+      }
+    }
+  },
+  "4253": {
+    "nickname": "Raid Zero",
+    "name": "Taipei American School",
+    "country": "Chinese Taipei",
+    "events_attended": {
+      "ausc": {
+        "name": "Southern Cross Regional",
+        "code": "ausc",
+        "location": "Sydney Olympic Park, NSW, Australia",
+        "start_date": "2020-03-14",
+        "end_date": "2020-03-17",
+        "event_type": 0
+      },
+      "chta": {
+        "name": "Science Park Taichung Regional",
+        "code": "chta",
+        "location": "Seatwen, TXQ, Chinese Taipei",
+        "start_date": "2020-03-05",
+        "end_date": "2020-03-08",
+        "event_type": 0
+      },
+      "hiho": {
+        "name": "Hawaii Regional",
+        "code": "hiho",
+        "location": "Honolulu, HI, USA",
+        "start_date": "2020-03-18",
+        "end_date": "2020-03-21",
+        "event_type": 0
+      }
+    }
+  },
+  "4613": {
+    "nickname": "Barker Redbacks",
+    "name": "AARNet/Innovation First International/BirdDog&Barker College",
+    "country": "Australia",
+    "events_attended": {
+      "ausc": {
+        "name": "Southern Cross Regional",
+        "code": "ausc",
+        "location": "Sydney Olympic Park, NSW, Australia",
+        "start_date": "2020-03-14",
+        "end_date": "2020-03-17",
+        "event_type": 0
+      },
+      "ausp": {
+        "name": "South Pacific Regional",
+        "code": "ausp",
+        "location": "Sydney Olympic Park, NSW, Australia",
+        "start_date": "2020-03-20",
+        "end_date": "2020-03-22",
+        "event_type": 0
+      }
+    }
+  },
+  "4774": {
+    "nickname": "The Drop Bears",
+    "name": "The University of Sydney/Australian Centre for Field Robotics/Warren Smith & Partners/Symantec Corporation/Google&The University of Sydney",
+    "country": "Australia",
+    "events_attended": {
+      "ausc": {
+        "name": "Southern Cross Regional",
+        "code": "ausc",
+        "location": "Sydney Olympic Park, NSW, Australia",
+        "start_date": "2020-03-14",
+        "end_date": "2020-03-17",
+        "event_type": 0
+      },
+      "ausp": {
+        "name": "South Pacific Regional",
+        "code": "ausp",
+        "location": "Sydney Olympic Park, NSW, Australia",
+        "start_date": "2020-03-20",
+        "end_date": "2020-03-22",
+        "event_type": 0
+      }
+    }
+  },
+  "4788": {
+    "nickname": "Can't Control",
+    "name": "Curtin University / Government of Western Australia, Department of Education, School Pathways Program & Curtin University",
+    "country": "Australia",
+    "events_attended": {
+      "ausc": {
+        "name": "Southern Cross Regional",
+        "code": "ausc",
+        "location": "Sydney Olympic Park, NSW, Australia",
+        "start_date": "2020-03-14",
+        "end_date": "2020-03-17",
+        "event_type": 0
+      },
+      "ausp": {
+        "name": "South Pacific Regional",
+        "code": "ausp",
+        "location": "Sydney Olympic Park, NSW, Australia",
+        "start_date": "2020-03-20",
+        "end_date": "2020-03-22",
+        "event_type": 0
+      }
+    }
+  },
+  "4802": {
+    "nickname": "U.M.M (Unidentified Moving Machines)",
+    "name": "Macquarie University & Blacktown Girls High School",
+    "country": "Australia",
+    "events_attended": {
+      "ausc": {
+        "name": "Southern Cross Regional",
+        "code": "ausc",
+        "location": "Sydney Olympic Park, NSW, Australia",
+        "start_date": "2020-03-14",
+        "end_date": "2020-03-17",
+        "event_type": 0
+      },
+      "ausp": {
+        "name": "South Pacific Regional",
+        "code": "ausp",
+        "location": "Sydney Olympic Park, NSW, Australia",
+        "start_date": "2020-03-20",
+        "end_date": "2020-03-22",
+        "event_type": 0
+      }
+    }
+  },
+  "4817": {
+    "nickname": "One Degree North",
+    "name": "Singapore American School/Autodesk/Nutonomy/Duck Learning&Singapore American School",
+    "country": "Singapore",
+    "events_attended": {
+      "ausc": {
+        "name": "Southern Cross Regional",
+        "code": "ausc",
+        "location": "Sydney Olympic Park, NSW, Australia",
+        "start_date": "2020-03-14",
+        "end_date": "2020-03-17",
+        "event_type": 0
+      },
+      "chta": {
+        "name": "Science Park Taichung Regional",
+        "code": "chta",
+        "location": "Seatwen, TXQ, Chinese Taipei",
+        "start_date": "2020-03-05",
+        "end_date": "2020-03-08",
+        "event_type": 0
+      }
+    }
+  },
+  "5584": {
+    "nickname": "ICRobotics",
+    "name": "AARNet/ADDE/BAE Systems Australia/Bendigo Bank/Current Industries/Ford Australia/Knox City Council/Macquarie University/QMS (Quality Metal Solutions)/Rockwell Automation Australia/SETEC/Stoanco Construction/Thales&Neighborhood Group",
+    "country": "Australia",
+    "events_attended": {
+      "ausc": {
+        "name": "Southern Cross Regional",
+        "code": "ausc",
+        "location": "Sydney Olympic Park, NSW, Australia",
+        "start_date": "2020-03-14",
+        "end_date": "2020-03-17",
+        "event_type": 0
+      }
+    }
+  },
+  "5593": {
+    "nickname": "Devil Robotics",
+    "name": "Family/Community",
+    "country": "Australia",
+    "events_attended": {
+      "ausc": {
+        "name": "Southern Cross Regional",
+        "code": "ausc",
+        "location": "Sydney Olympic Park, NSW, Australia",
+        "start_date": "2020-03-14",
+        "end_date": "2020-03-17",
+        "event_type": 0
+      }
+    }
+  },
+  "5985": {
+    "nickname": "Project Bucephalus",
+    "name": "Project Bucephalus Robotics/TAFE NSW/University of Wollongong/Total Aerospace Solutions/IronCAD/CAD International/Go Hire/Blackbird Ventures/ANOVA/Mt St Thomas Public School/Wollongong West Public School&Family/Community",
+    "country": "Australia",
+    "events_attended": {
+      "ausc": {
+        "name": "Southern Cross Regional",
+        "code": "ausc",
+        "location": "Sydney Olympic Park, NSW, Australia",
+        "start_date": "2020-03-14",
+        "end_date": "2020-03-17",
+        "event_type": 0
+      },
+      "ausp": {
+        "name": "South Pacific Regional",
+        "code": "ausp",
+        "location": "Sydney Olympic Park, NSW, Australia",
+        "start_date": "2020-03-20",
+        "end_date": "2020-03-22",
+        "event_type": 0
+      }
+    }
+  },
+  "6083": {
+    "nickname": "Overlooking",
+    "name": "Mawhwa Packing/Diing Kuen Plastic Machinery /Concordia Middle School Parents Association&Concordia Middle School",
+    "country": "Chinese Taipei",
+    "events_attended": {
+      "ausc": {
+        "name": "Southern Cross Regional",
+        "code": "ausc",
+        "location": "Sydney Olympic Park, NSW, Australia",
+        "start_date": "2020-03-14",
+        "end_date": "2020-03-17",
+        "event_type": 0
+      },
+      "ausp": {
+        "name": "South Pacific Regional",
+        "code": "ausp",
+        "location": "Sydney Olympic Park, NSW, Australia",
+        "start_date": "2020-03-20",
+        "end_date": "2020-03-22",
+        "event_type": 0
+      },
+      "chta": {
+        "name": "Science Park Taichung Regional",
+        "code": "chta",
+        "location": "Seatwen, TXQ, Chinese Taipei",
+        "start_date": "2020-03-05",
+        "end_date": "2020-03-08",
+        "event_type": 0
+      }
+    }
+  },
+  "6191": {
+    "nickname": "RoboKryptonite",
+    "name": "GOLF GIFTS & GALLERY(Dean Chudy (President))&Taipei First Girls High School",
+    "country": "Chinese Taipei",
+    "events_attended": {
+      "ausc": {
+        "name": "Southern Cross Regional",
+        "code": "ausc",
+        "location": "Sydney Olympic Park, NSW, Australia",
+        "start_date": "2020-03-14",
+        "end_date": "2020-03-17",
+        "event_type": 0
+      },
+      "chta": {
+        "name": "Science Park Taichung Regional",
+        "code": "chta",
+        "location": "Seatwen, TXQ, Chinese Taipei",
+        "start_date": "2020-03-05",
+        "end_date": "2020-03-08",
+        "event_type": 0
+      }
+    }
+  },
+  "6434": {
+    "nickname": "Bossley Park High School",
+    "name": "Bossley Park High School/Tripolis Civil Engineering/AARNET/Club Marconi/St Johns Bowling Club/Club Marconi&Bossley Park High School",
+    "country": "Australia",
+    "events_attended": {
+      "ausc": {
+        "name": "Southern Cross Regional",
+        "code": "ausc",
+        "location": "Sydney Olympic Park, NSW, Australia",
+        "start_date": "2020-03-14",
+        "end_date": "2020-03-17",
+        "event_type": 0
+      },
+      "ausp": {
+        "name": "South Pacific Regional",
+        "code": "ausp",
+        "location": "Sydney Olympic Park, NSW, Australia",
+        "start_date": "2020-03-20",
+        "end_date": "2020-03-22",
+        "event_type": 0
+      }
+    }
+  },
+  "6508": {
+    "nickname": "Hastings Heroes",
+    "name": "Hastings Secondary College Westport Campus & Hastings Secondary College Port Macquarie Campus",
+    "country": "Australia",
+    "events_attended": {
+      "ausc": {
+        "name": "Southern Cross Regional",
+        "code": "ausc",
+        "location": "Sydney Olympic Park, NSW, Australia",
+        "start_date": "2020-03-14",
+        "end_date": "2020-03-17",
+        "event_type": 0
+      },
+      "ausp": {
+        "name": "South Pacific Regional",
+        "code": "ausp",
+        "location": "Sydney Olympic Park, NSW, Australia",
+        "start_date": "2020-03-20",
+        "end_date": "2020-03-22",
+        "event_type": 0
+      }
+    }
+  },
+  "6510": {
+    "nickname": "Pymble Pride",
+    "name": "Pymble Ladies College/Tradiebot/Ultraflex&Pymble Ladies' College",
+    "country": "Australia",
+    "events_attended": {
+      "ausc": {
+        "name": "Southern Cross Regional",
+        "code": "ausc",
+        "location": "Sydney Olympic Park, NSW, Australia",
+        "start_date": "2020-03-14",
+        "end_date": "2020-03-17",
+        "event_type": 0
+      },
+      "ausp": {
+        "name": "South Pacific Regional",
+        "code": "ausp",
+        "location": "Sydney Olympic Park, NSW, Australia",
+        "start_date": "2020-03-20",
+        "end_date": "2020-03-22",
+        "event_type": 0
+      }
+    }
+  },
+  "6520": {
+    "nickname": "Hanoi Amsterdam School",
+    "name": "Hanoi-Amsterdam High School for the Gifted",
+    "country": "Vietnam",
+    "events_attended": {
+      "ausc": {
+        "name": "Southern Cross Regional",
+        "code": "ausc",
+        "location": "Sydney Olympic Park, NSW, Australia",
+        "start_date": "2020-03-14",
+        "end_date": "2020-03-17",
+        "event_type": 0
+      },
+      "ausp": {
+        "name": "South Pacific Regional",
+        "code": "ausp",
+        "location": "Sydney Olympic Park, NSW, Australia",
+        "start_date": "2020-03-20",
+        "end_date": "2020-03-22",
+        "event_type": 0
+      }
+    }
+  },
+  "6525": {
+    "nickname": "Greater Sydney Robotics",
+    "name": "Sydney TAFE",
+    "country": "Australia",
+    "events_attended": {
+      "ausc": {
+        "name": "Southern Cross Regional",
+        "code": "ausc",
+        "location": "Sydney Olympic Park, NSW, Australia",
+        "start_date": "2020-03-14",
+        "end_date": "2020-03-17",
+        "event_type": 0
+      }
+    }
+  },
+  "6579": {
+    "nickname": "Komplete Kaos Inc",
+    "name": "Blackbird Ventures/Argosy Foundation/Ford Australia/AARNet/B.A and N Whipp Plastics/TAFE Illawarra/All Source Aluminium Supplies/Metropolitan Coal/Macquarie University/Charlie Designs/Versuita Mechanica/Bryan Scott&Komplete Kaos Inc",
+    "country": "Australia",
+    "events_attended": {
+      "ausc": {
+        "name": "Southern Cross Regional",
+        "code": "ausc",
+        "location": "Sydney Olympic Park, NSW, Australia",
+        "start_date": "2020-03-14",
+        "end_date": "2020-03-17",
+        "event_type": 0
+      }
+    }
+  },
+  "6813": {
+    "nickname": "Pangaea",
+    "name": "American School of Bombay",
+    "country": "India",
+    "events_attended": {
+      "ausc": {
+        "name": "Southern Cross Regional",
+        "code": "ausc",
+        "location": "Sydney Olympic Park, NSW, Australia",
+        "start_date": "2020-03-14",
+        "end_date": "2020-03-17",
+        "event_type": 0
+      }
+    }
+  },
+  "6996": {
+    "nickname": "Koalafied",
+    "name": "Pembroke School/C&J Accountants & Advisors/FIRST@/Babcock /Haigh's Chocolates/Redarc&Pembroke School",
+    "country": "Australia",
+    "events_attended": {
+      "ausc": {
+        "name": "Southern Cross Regional",
+        "code": "ausc",
+        "location": "Sydney Olympic Park, NSW, Australia",
+        "start_date": "2020-03-14",
+        "end_date": "2020-03-17",
+        "event_type": 0
+      },
+      "ausp": {
+        "name": "South Pacific Regional",
+        "code": "ausp",
+        "location": "Sydney Olympic Park, NSW, Australia",
+        "start_date": "2020-03-20",
+        "end_date": "2020-03-22",
+        "event_type": 0
+      }
+    }
+  },
+  "7023": {
+    "nickname": "Tamworth Titans",
+    "name": "Oxley high school",
+    "country": "Australia",
+    "events_attended": {
+      "ausc": {
+        "name": "Southern Cross Regional",
+        "code": "ausc",
+        "location": "Sydney Olympic Park, NSW, Australia",
+        "start_date": "2020-03-14",
+        "end_date": "2020-03-17",
+        "event_type": 0
+      }
+    }
+  },
+  "7128": {
+    "nickname": "XLR8",
+    "name": "KIOSC Swinburne University/Victorian Department of Education/BAE&Greater Melbourne Area High Schools",
+    "country": "Australia",
+    "events_attended": {
+      "ausc": {
+        "name": "Southern Cross Regional",
+        "code": "ausc",
+        "location": "Sydney Olympic Park, NSW, Australia",
+        "start_date": "2020-03-14",
+        "end_date": "2020-03-17",
+        "event_type": 0
+      }
+    }
+  },
+  "7163": {
+    "nickname": "A.I. Metal Pies",
+    "name": "Youth Off the Streets",
+    "country": "Australia",
+    "events_attended": {
+      "ausc": {
+        "name": "Southern Cross Regional",
+        "code": "ausc",
+        "location": "Sydney Olympic Park, NSW, Australia",
+        "start_date": "2020-03-14",
+        "end_date": "2020-03-17",
+        "event_type": 0
+      }
+    }
+  },
+  "7433": {
+    "nickname": "Iona Fusion",
+    "name": "Consep Engineering Innovation/Pycon Homes & Construction/Fuji Xerox Business Centre Mid North Coast/Warren Smith & Partners/Akubra Hats&St Columba Anglican School",
+    "country": "Australia",
+    "events_attended": {
+      "ausc": {
+        "name": "Southern Cross Regional",
+        "code": "ausc",
+        "location": "Sydney Olympic Park, NSW, Australia",
+        "start_date": "2020-03-14",
+        "end_date": "2020-03-17",
+        "event_type": 0
+      },
+      "ausp": {
+        "name": "South Pacific Regional",
+        "code": "ausp",
+        "location": "Sydney Olympic Park, NSW, Australia",
+        "start_date": "2020-03-20",
+        "end_date": "2020-03-22",
+        "event_type": 0
+      }
+    }
+  },
+  "7523": {
+    "nickname": "SpringBots",
+    "name": "CG Holdings/New Age Technologies/Prommac/Barker College/DOW Chemicals&SpringBots Robotics Club&Centurion Public Schools&AIDTEC",
+    "country": "South Africa",
+    "events_attended": {
+      "ausc": {
+        "name": "Southern Cross Regional",
+        "code": "ausc",
+        "location": "Sydney Olympic Park, NSW, Australia",
+        "start_date": "2020-03-14",
+        "end_date": "2020-03-17",
+        "event_type": 0
+      }
+    }
+  },
+  "7539": {
+    "nickname": "Elev8",
+    "name": "Dhirubhai Ambani International School & RoboFun Lab Pvt. Ltd.",
+    "country": "India",
+    "events_attended": {
+      "ausc": {
+        "name": "Southern Cross Regional",
+        "code": "ausc",
+        "location": "Sydney Olympic Park, NSW, Australia",
+        "start_date": "2020-03-14",
+        "end_date": "2020-03-17",
+        "event_type": 0
+      },
+      "ausp": {
+        "name": "South Pacific Regional",
+        "code": "ausp",
+        "location": "Sydney Olympic Park, NSW, Australia",
+        "start_date": "2020-03-20",
+        "end_date": "2020-03-22",
+        "event_type": 0
+      }
+    }
+  },
+  "7561": {
+    "nickname": "Blue Flamingos",
+    "name": "Argosy Foundation/Google/Hospital Hill Pharmacy/Intuitive Foundation & Family/Community",
+    "country": "Australia",
+    "events_attended": {
+      "ausc": {
+        "name": "Southern Cross Regional",
+        "code": "ausc",
+        "location": "Sydney Olympic Park, NSW, Australia",
+        "start_date": "2020-03-14",
+        "end_date": "2020-03-17",
+        "event_type": 0
+      },
+      "ausp": {
+        "name": "South Pacific Regional",
+        "code": "ausp",
+        "location": "Sydney Olympic Park, NSW, Australia",
+        "start_date": "2020-03-20",
+        "end_date": "2020-03-22",
+        "event_type": 0
+      }
+    }
+  },
+  "7583": {
+    "nickname": "Elonera Embers",
+    "name": "FIRST/Blackbird VC/Ericom/Rhythmic Films/Bluecats/Bright Star Kids/Bunnings Warehouse/SolidWorks&Elonera Montessori",
+    "country": "Australia",
+    "events_attended": {
+      "ausc": {
+        "name": "Southern Cross Regional",
+        "code": "ausc",
+        "location": "Sydney Olympic Park, NSW, Australia",
+        "start_date": "2020-03-14",
+        "end_date": "2020-03-17",
+        "event_type": 0
+      },
+      "ausp": {
+        "name": "South Pacific Regional",
+        "code": "ausp",
+        "location": "Sydney Olympic Park, NSW, Australia",
+        "start_date": "2020-03-20",
+        "end_date": "2020-03-22",
+        "event_type": 0
+      }
+    }
+  },
+  "7593": {
+    "nickname": "SymbiOHSis",
+    "name": "KiwiFirst Trust/Jackson Industries/SMC Pneumatics New Zealand&Onehunga High School",
+    "country": "New Zealand",
+    "events_attended": {
+      "ausc": {
+        "name": "Southern Cross Regional",
+        "code": "ausc",
+        "location": "Sydney Olympic Park, NSW, Australia",
+        "start_date": "2020-03-14",
+        "end_date": "2020-03-17",
+        "event_type": 0
+      },
+      "ausp": {
+        "name": "South Pacific Regional",
+        "code": "ausp",
+        "location": "Sydney Olympic Park, NSW, Australia",
+        "start_date": "2020-03-20",
+        "end_date": "2020-03-22",
+        "event_type": 0
+      }
+    }
+  },
+  "7709": {
+    "nickname": "Formosa Pangolin",
+    "name": "New Taipei Municipal Banqiao Senior High School",
+    "country": "Chinese Taipei",
+    "events_attended": {
+      "ausc": {
+        "name": "Southern Cross Regional",
+        "code": "ausc",
+        "location": "Sydney Olympic Park, NSW, Australia",
+        "start_date": "2020-03-14",
+        "end_date": "2020-03-17",
+        "event_type": 0
+      }
+    }
+  },
+  "7719": {
+    "nickname": "Java Knights ",
+    "name": "MAS International TechnoNatura",
+    "country": "Indonesia",
+    "events_attended": {
+      "ausc": {
+        "name": "Southern Cross Regional",
+        "code": "ausc",
+        "location": "Sydney Olympic Park, NSW, Australia",
+        "start_date": "2020-03-14",
+        "end_date": "2020-03-17",
+        "event_type": 0
+      },
+      "ausp": {
+        "name": "South Pacific Regional",
+        "code": "ausp",
+        "location": "Sydney Olympic Park, NSW, Australia",
+        "start_date": "2020-03-20",
+        "end_date": "2020-03-22",
+        "event_type": 0
+      }
+    }
+  },
+  "7884": {
+    "nickname": "Delta Phoenix",
+    "name": "Darley Aluminium&Parramatta High School",
+    "country": "Australia",
+    "events_attended": {
+      "ausc": {
+        "name": "Southern Cross Regional",
+        "code": "ausc",
+        "location": "Sydney Olympic Park, NSW, Australia",
+        "start_date": "2020-03-14",
+        "end_date": "2020-03-17",
+        "event_type": 0
+      }
+    }
+  },
+  "8180": {
+    "nickname": "ChainsMaker",
+    "name": "Fubon Cultural & Educational Foundation&Family/Community",
+    "country": "Chinese Taipei",
+    "events_attended": {
+      "ausc": {
+        "name": "Southern Cross Regional",
+        "code": "ausc",
+        "location": "Sydney Olympic Park, NSW, Australia",
+        "start_date": "2020-03-14",
+        "end_date": "2020-03-17",
+        "event_type": 0
+      }
+    }
+  },
+  "8235": {
+    "nickname": "Beyond the Flames",
+    "name": "NPS International School",
+    "country": "Singapore",
+    "events_attended": {
+      "ausc": {
+        "name": "Southern Cross Regional",
+        "code": "ausc",
+        "location": "Sydney Olympic Park, NSW, Australia",
+        "start_date": "2020-03-14",
+        "end_date": "2020-03-17",
+        "event_type": 0
+      }
+    }
+  },
+  "8259": {
+    "nickname": "Deakin Velocity",
+    "name": "Deakin University&Family/Community",
+    "country": "Australia",
+    "events_attended": {
+      "ausc": {
+        "name": "Southern Cross Regional",
+        "code": "ausc",
+        "location": "Sydney Olympic Park, NSW, Australia",
+        "start_date": "2020-03-14",
+        "end_date": "2020-03-17",
+        "event_type": 0
+      }
+    }
+  },
+  "8282": {
+    "nickname": "Metal Minds Robotics",
+    "name": "Family/Community",
+    "country": "Australia",
+    "events_attended": {
+      "ausc": {
+        "name": "Southern Cross Regional",
+        "code": "ausc",
+        "location": "Sydney Olympic Park, NSW, Australia",
+        "start_date": "2020-03-14",
+        "end_date": "2020-03-17",
+        "event_type": 0
+      }
+    }
+  }
+}
