@@ -9,9 +9,9 @@ require './tba_basic_operations.rb'
 #         (ie. team # has data: nickname, country, wildcard, match stats, etc)
 #     - asks for YEAR and EVENT_CODE ( gets )
 
-write_to_dir = __dir__ + '/../written-files/'
+WRITE_TO_DIR = __dir__ + '/../written-files/'
 
-EVENT_CODE = 'ausc'
+EVENT_CODE = 'ausp'
 YEAR = '2019'
 EVENT_KEY = "#{YEAR}#{EVENT_CODE}"
 
@@ -48,9 +48,9 @@ def teams_events(dta)
     team_by_event_data[n] = {}
 
     current_teams_events.each do |e|
-      team_by_event_data[n][e['EVENT_CODE']] = {
+      team_by_event_data[n][e['event_code']] = {
         name: e['name'],
-        code: e['EVENT_CODE'],
+        code: e['event_code'],
         location: "#{e['city']}, #{e['state_prov']}, #{e['country']}",
         start_date: e['start_date'], 
         end_date: e['end_date'],
@@ -62,20 +62,20 @@ def teams_events(dta)
 end
 
 
-def gen_teams_and_events(is_write_file, write_to_dir)
+def gen_teams_and_events(is_write_file)
   # download data from tba and write to file
-  team_data = initialise_teams_hash(EVENT_KEY)
+  team_data = initialise_teams_hash()
   # team_data = JSON.parse(File.read('team_data.json'))
 
   # creates a hash in the form {team#: {ausp: {ausp_data}, ausc: {ausc_data}}}
-  events_by_team = teams_events(YEAR, team_data)
+  events_by_team = teams_events(team_data)
   # puts the event data into the main team_data hash
   events_by_team.each do |n, d|
     team_data[n]['events_attended'] = d
   end
 
   if is_write_file
-    write_to_pretty_json(write_to_dir, "#{EVENT_KEY}_team_and_event_data", team_data)
+    write_to_pretty_json(WRITE_TO_DIR, "#{EVENT_KEY}_team_and_event_data", team_data)
   end
   team_data
 end
@@ -97,10 +97,13 @@ def potential_wildcards(tms_data)
   # for all teams in potenwilds find if won any awards
   wdcd = {}
   poten_wilds.each do |num, data|
-    wdcd[num] = find_wildcard_reason(num, data)
+    deet = find_wildcard_reason(num, data) 
+    if !deet.empty?
+      wdcd[num] = deet
+    end
   end
-
   wdcd
+  # wdcd.keep_if {|k, _| !k.empty?} 
 end
 
 
@@ -108,26 +111,26 @@ def find_wildcard_reason(tm, dta)
   deet = {}
 
   dta['events_attended'].each do |ecode, edata|
-    team_awards = tba_call("team/frc#{tm}/event/#{YEAR}#{EVENT_CODE}/awards")
+    # print(ecode, tm)
+    team_awards = tba_call("team/frc#{tm}/event/#{YEAR}#{ecode}/awards")
     team_awards.each do |award|
       if [0,1,9,10].include?(award['award_type'])
-        # print(aware[:name:])
-        deet[EVENT_CODE] = award['award_name']
+        # print(award['name'])
+        deet[ecode.to_s] = award['name']
       end
     end
   end
   
   if HALL_OF_FAME.include?(tm)
-    # print('hall of farm')
-    deet[' '] = 'Hall of Fame'
+    # print('hall of fame')
+    deet['-'] = 'Hall of Fame'
   end
-  # jj deet
   deet
 end
 
 # ######################################################################## #
 
-# tms = gen_teams_and_events(event_keyEVENT_KEY, YEAR, true, write_to_dir)
+# tms = gen_teams_and_events(true)
 tms = open_json_file(__dir__ + "/../written-files", "#{EVENT_KEY}_team_and_event_data")
 # jj tms
 jj potential_wildcards(tms)

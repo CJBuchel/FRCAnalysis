@@ -25,6 +25,7 @@ event/{event_key}/matches/simple
 team/{teamkey}/events/{year}/simple
 
 team/{teamkey}/event/{event_key}/awards
+https://github.com/the-blue-alliance/the-blue-alliance/blob/master/consts/award_type.py#L6
     award_type:
         0 = chairmans
         1 = winner
