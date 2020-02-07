@@ -58,4 +58,4 @@ build-iPhoneSimulator/
 
 # Custom Files
 written-files/
-!written-files/.gitkeep
+!written-files/empty.txt
