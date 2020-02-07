@@ -9,11 +9,11 @@
 
 require './tba_basic_operations.rb'
 
-event_code = 'ausp'
-year = '2019'
-event_key = "#{year}#{event_code}"
+EVENT_CODE = 'ausp'
+YEAR = '2018'
+EVENT_KEY = "#{YEAR}#{EVENT_CODE}"
 
-write_to_dir = __dir__ + '/../written-files/'
+WRITE_TO_DIR = __dir__ + '/../written-files/'
 
 # ########################################################################### #
 
@@ -34,7 +34,7 @@ def swap_robotnum_to_teamnum(teams, dta)
       end
     end
     unless is_done
-      scoring[k] = v 
+      scoring[k] = v
     end
   end
 
@@ -42,7 +42,7 @@ def swap_robotnum_to_teamnum(teams, dta)
 end
 
 # generates a match schedule with all scores and score breakdown
-def post_match_data_summary(dta, ekey, is_write_file, dir)
+def post_match_data_summary(dta, is_write_file)
   m_sh = {qm: {}, sf: {}, qf: {}, f: {}}
 
   dta.each do |m|
@@ -64,7 +64,7 @@ def post_match_data_summary(dta, ekey, is_write_file, dir)
   end
 
   if is_write_file
-    write_to_pretty_json(dir, "#{ekey}_post_match", m_sh)
+    write_to_pretty_json(WRITE_TO_DIR, "#{EVENT_KEY}_post_match", m_sh)
   else
     m_sh
   end
@@ -90,9 +90,9 @@ end
 # ########################################################################### #
 
 # # pulls data from tba and creates file
-tba_matches = tba_call("event/#{event_key}/matches")
-post_match_data_summary(tba_matches, event_key, true, write_to_dir)
+tba_matches = tba_call("event/#{EVENT_KEY}/matches")
+post_match_data_summary(tba_matches, true)
 
-# post_match_data = open_json_file(write_to_dir, "#{event_key}_post_match")
+# post_match_data = open_json_file( "#{EVENT_KEY}_post_match")
 
 # jj teams_matches_find('5333', post_match_data)

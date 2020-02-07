@@ -9,19 +9,19 @@ require './tba_basic_operations.rb'
 
 # ########################################################################### #
 
-event_code = 'ausp'
-year = '2019'
-event_key = "#{year}#{event_code}"
+EVENT_CODE = 'ausp'
+YEAR = '2019'
+EVENT_KEY = "#{YEAR}#{EVENT_CODE}"
 
-write_to_dir = __dir__ + '/../written-files/'
+WRITE_TO_DIR = __dir__ + '/../written-files/'
 
 # ########################################################################### #
 
 # generates a match schedule with only match number and alliances
-def gen_match_schedule(ekey, is_write_file, dir)
+def gen_match_schedule(is_write_file)
   m_sh = {}
 
-  tba_matches = tba_call("event/#{ekey}/matches/simple")
+  tba_matches = tba_call("event/#{EVENT_KEY}/matches/simple")
 
   tba_matches.each do |m|
     # f m[:comp_level] == 'qm'
@@ -37,7 +37,7 @@ def gen_match_schedule(ekey, is_write_file, dir)
   # m_sh = m_sh.sort.to_h
 
   if is_write_file 
-    write_to_pretty_json(dir, "#{ekey}_match_schedule", m_sh)
+    write_to_pretty_json(WRITE_TO_DIR, "#{EVENT_KEY}_match_schedule", m_sh)
   end
   m_sh
 end
@@ -56,9 +56,9 @@ def find_teams_matches(tm, pre_dta)
 end
 
 
-def export_to_csv(dta, ekey, writedir)
+def export_to_csv(dta)
 
-  CSV.open("#{writedir}#{ekey}_match_schedule.csv", 'wb') do |csv|
+  CSV.open("#{WRITE_TO_DIR}#{EVENT_KEY}_match_schedule.csv", 'wb') do |csv|
     csv << ["Match Number", "Time", "Red1", "Red2", "Red3", "Blue1", "Blue2", "Blue3"]
     dta.each do |matchnum, m|
       row = [ matchnum, m[:time] ] +  m[:red_alliance] + m[:blue_alliance]
@@ -70,10 +70,10 @@ end
 # ########################################################################### #
 
 
-match_schedule = gen_match_schedule(event_key, false, write_to_dir)
+match_schedule = gen_match_schedule(false)
 # print(match_schedule)
 
-# match_schedule = open_json_file(write_to_dir, "#{event_key}_match_schedule")
-# export_to_csv(match_schedule, event_key, write_to_dir)
+# match_schedule = open_json_file("#{EVENT_KEY}_match_schedule")
+export_to_csv(match_schedule)
 # jj find_teams_matches(5333, match_schedule)
 
