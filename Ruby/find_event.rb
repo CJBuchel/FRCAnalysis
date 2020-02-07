@@ -4,8 +4,9 @@ print 'input what event you want to find the key of (in all lowercase): '
 keyword = gets.chomp.downcase
 # puts keyword
 
+year = 2020
 
-all_events = tba_call('events/2019')
+all_events = tba_call("events/#{year}")
 
 puts 'possible eventkey is : '
 all_events.each do |event|
