@@ -1,7 +1,9 @@
 require 'json'
 require 'open-uri'
+require 'dotenv'
+Dotenv.load
 
-AUTH_KEY = 
+AUTH_KEY = ENV["TBA_AUTH_KEY"]
 
 def tba_call(api_ref)
   response = open("https://www.thebluealliance.com/api/v3/#{api_ref}?X-TBA-Auth-Key=#{AUTH_KEY}").read

@@ -10,7 +10,7 @@ require './tba_basic_operations.rb'
 # ########################################################################### #
 
 event_code = 'ausp'
-year = '2018'
+year = '2019'
 event_key = "#{year}#{event_code}"
 
 write_to_dir = __dir__ + '/../written-files/'

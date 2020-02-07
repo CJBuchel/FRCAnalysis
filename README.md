@@ -1,7 +1,8 @@
 # FRC Data Helper Thing
 
-A collection of ruby scripts that use TBA to perform actions.
+A collection of ruby scripts that use TBA to perform actions. Output samples are available in SampleOutputs directory.
 The scripts are quite varied in their purpose, and some of them may be broken, but they all relate to FRC.
+Scripts by default will export to the directory written-files. 
 
 
 ## Scripts 
