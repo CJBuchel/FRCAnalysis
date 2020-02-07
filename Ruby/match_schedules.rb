@@ -48,7 +48,7 @@ def find_teams_matches(tm, pre_dta)
   matches = {}
   # col = "blank"
   pre_dta.each do |m, d|
-    if d['red_alliance'].any? { |t| t==tm.to_s } || d['blue_alliance'].any? { |t| t==tm.to_s }
+    if d[:red_alliance].any? { |t| t==tm.to_s } || d[:blue_alliance].any? { |t| t==tm.to_s }
       matches[m] = d
     end
   end
@@ -58,7 +58,7 @@ end
 
 def export_to_csv(dta, ekey, writedir)
 
-  CSV.open("#{writedir}#{ekey}_match_schedule.csv", "wb") do |csv|
+  CSV.open("#{writedir}#{ekey}_match_schedule.csv", 'wb') do |csv|
     csv << ["Match Number", "Time", "Red1", "Red2", "Red3", "Blue1", "Blue2", "Blue3"]
     dta.each do |matchnum, m|
       row = [ matchnum, m[:time] ] +  m[:red_alliance] + m[:blue_alliance]
@@ -70,10 +70,10 @@ end
 # ########################################################################### #
 
 
-match_schedule = gen_match_schedule(event_key, true, write_to_dir)
+match_schedule = gen_match_schedule(event_key, false, write_to_dir)
 # print(match_schedule)
 
 # match_schedule = open_json_file(write_to_dir, "#{event_key}_match_schedule")
-export_to_csv(match_schedule, event_key, write_to_dir)
-# jj find_teams_matches(5333, matches_simple)
+# export_to_csv(match_schedule, event_key, write_to_dir)
+# jj find_teams_matches(5333, match_schedule)
 

@@ -12,8 +12,12 @@ require './tba_basic_operations.rb'
 write_to_dir = __dir__ + '/../written-files/'
 
 event_code = 'ausc'
-year = '2020'
+year = '2019'
 event_key = "#{year}#{event_code}"
+
+
+HALL_OF_FAME = [1311, 2834, 3132, 2614, 987, 597, 27, 1538, 1114, 359, 341,
+                236, 842, 365, 111, 67, 254, 103, 175, 22, 16, 120, 23, 47, 144, 151, 191]
 
 # ########################################################################### #
 
@@ -57,19 +61,71 @@ def teams_events(yr, dta)
   team_by_event_data
 end
 
+def gen_teams_and_events(ekey, yr, is_write_file, write_to_dir)
+  # download data from tba and write to file
+  team_data = initialise_teams_hash(ekey)
+  # team_data = JSON.parse(File.read('team_data.json'))
+
+  # creates a hash in the form {team#: {ausp: {ausp_data}, ausc: {ausc_data}}}
+  events_by_team = teams_events(yr, team_data)
+  # puts the event data into the main team_data hash
+  events_by_team.each do |n, d|
+    team_data[n]['events_attended'] = d
+  end
+
+  if is_write_file
+    write_to_pretty_json(write_to_dir, "#{ekey}_team_and_event_data", team_data)
+  end
+  team_data
+end
+
+# finds which teams attended an event other than <event_code> 
+def potential_wildcards(tms_data, yr, ecode)
+  poten_wilds = {}
+
+  # get all the teams that attended more than one event into poten_wilds
+  tms_data.each do |num, data|
+    data['events_attended'].each do |ekey, edata| # for each teams event
+      if edata['code'] != ecode && edata['event_type'] != 0 # if not this regional
+        poten_wilds[num] = data # overrides
+      end
+    end
+  end
+
+  # for all teams in potenwilds find if won any awards
+  wdcd = {}
+  poten_wilds.each do |num, data|
+    wdcd[num] = find_wildcard_reason(num, data, yr, ecode)
+  end
+
+  wdcd
+end
+
+
+def find_wildcard_reason(tm, dta, yr, ecode)
+  deet = {}
+
+  dta['events_attended'].each do |ecode, edata|
+    team_awards = tba_call("team/frc#{tm}/event/#{yr}#{ecode}/awards")
+    team_awards.each do |award|
+      if [0,1,9,10].include?(award['award_type'])
+        # print(aware[:name:])
+        deet[ecode] = award['award_name']
+      end
+    end
+  end
+  
+  if HALL_OF_FAME.include?(tm)
+    # print('hall of farm')
+    deet[' '] = 'Hall of Fame'
+  end
+  # jj deet
+  deet
+end
 
 # ######################################################################## #
 
-
-# download data from tba and write to file
-team_data = initialise_teams_hash(event_key)
-# team_data = JSON.parse(File.read('team_data.json'))
-
-# creates a hash in the form {team#: {ausp: {ausp_data}, ausc: {ausc_data}}}
-events_by_team = teams_events(year, team_data)
-# puts the event data into the main team_data hash
-events_by_team.each do |n, d|
-  team_data[n]['events_attended'] = d
-end
-
-write_to_pretty_json(write_to_dir, "#{event_key}_team_and_event_data", team_data)
+# tms = gen_teams_and_events(event_key, year, true, write_to_dir)
+tms = open_json_file(__dir__ + "/../written-files", "#{event_key}_team_and_event_data")
+# jj tms
+jj potential_wildcards(tms, year, event_code)
